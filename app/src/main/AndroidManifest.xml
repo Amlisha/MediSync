@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MediSync">
+        <activity
+            android:name=".HealthProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecordActivity"
+            android:exported="false" />
+        <activity android:name=".MedicineActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MedicalReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmergencyContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicineReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResolverActivity"
+            android:exported="false" />
+        <receiver
+            android:name=".ReminderReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <activity
+            android:name=".MedicineListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicalReportListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmergencyContactListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatbotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
