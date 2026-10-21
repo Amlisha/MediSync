@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#E3F5F1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Medicines"
+        android:textColor="#205C56"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View and manage your saved medicines."
+        android:textColor="#426D68"
+        android:textSize="14sp"
+        android:layout_marginBottom="18dp" />
+
+    <Button
+        android:id="@+id/btnAddMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="+ Add Medicine"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#31877E"
+        android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:id="@+id/tvEmptyMedicines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No medicines saved yet."
+        android:textColor="#426D68"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lvMedicines"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#A8DCD4"
+        android:dividerHeight="1dp"
+        android:background="#E3F5F1" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:background="#E3F5F1">
+
+    <TextView
+        android:id="@+id/tvMedicineDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#205C56"
+        android:textSize="14sp"
+        android:paddingEnd="8dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="4dp">
+
+        <Button
+            android:id="@+id/btnEditMedicine"
+            android:layout_width="76dp"
+            android:layout_height="38dp"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="2dp"
+            android:backgroundTint="#31877E"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDeleteMedicine"
+            android:layout_width="76dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="4dp"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="2dp"
+            android:backgroundTint="#B85C65"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
