@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FFFC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Reminder"
+            android:textColor="#205C56"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="22dp"
+            android:text="Keep track of your upcoming doctor visits."
+            android:textColor="#426D68"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/medisync_input"
+            android:hint="Doctor's name"
+            android:inputType="textCapWords"
+            android:padding="14dp"
+            android:textColor="#205C56"
+            android:textColorHint="#72918C" />
+
+        <EditText
+            android:id="@+id/etHospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/medisync_input"
+            android:hint="Hospital or clinic name"
+            android:inputType="textCapSentences"
+            android:padding="14dp"
+            android:textColor="#205C56"
+            android:textColorHint="#72918C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Appointment Date"
+            android:textColor="#205C56"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etAppointmentDate"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/medisync_input"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+            android:focusable="false"
+            android:hint="Select date"
+            android:padding="12dp"
+            android:textColor="#205C56"
+            android:textColorHint="#72918C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Appointment Time (24-hour)"
+            android:textColor="#205C56"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etAppointmentTime"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/medisync_input"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:drawableEnd="@android:drawable/ic_lock_idle_alarm"
+            android:focusable="false"
+            android:hint="Select time (e.g. 20:45)"
+            android:padding="12dp"
+            android:textColor="#205C56"
+            android:textColorHint="#72918C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Notes (Optional)"
+            android:textColor="#205C56"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etAppointmentDescription"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/medisync_input"
+            android:gravity="top"
+            android:hint="E.g. Follow-up visit"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="12dp"
+            android:textColor="#205C56"
+            android:textColorHint="#72918C" />
+
+        <Button
+            android:id="@+id/btnSaveAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#31877E"
+            android:text="Save Appointment"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
