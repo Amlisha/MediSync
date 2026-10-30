@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDEDE7"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- MEDIBOT HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/medisync_welcome_banner"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/card_reminders"
+            android:gravity="center"
+            android:text="&#129302;"
+            android:textSize="25sp"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MediBot"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Your offline health assistant"
+                android:textColor="#D8F3EC"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="● Offline"
+            android:textColor="#B3E1DA"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- TOPIC HEADING -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="4dp"
+        android:text="Explore a Topic"
+        android:textColor="#205C56"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- QUICK TOPIC BUTTONS -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHealthyHabits"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginEnd="7dp"
+                android:backgroundTint="#F5FFFD"
+                android:minHeight="0dp"
+                android:text="Healthy Habits"
+                android:textAllCaps="false"
+                android:textColor="#205C56"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnMedicineHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginEnd="7dp"
+                android:backgroundTint="#F5FFFD"
+                android:minHeight="0dp"
+                android:text="Medicine Safety"
+                android:textAllCaps="false"
+                android:textColor="#205C56"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnAppointmentHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginEnd="7dp"
+                android:backgroundTint="#F5FFFD"
+                android:minHeight="0dp"
+                android:text="Appointments"
+                android:textAllCaps="false"
+                android:textColor="#205C56"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnAppHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:backgroundTint="#F5FFFD"
+                android:minHeight="0dp"
+                android:text="Using MediSync"
+                android:textAllCaps="false"
+                android:textColor="#205C56"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- CHAT HEADING -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="4dp"
+            android:text="Chat with MediBot"
+            android:textColor="#205C56"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEALTH ASSISTANT"
+            android:textColor="#31877E"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- CHAT CONVERSATION AREA -->
+    <ScrollView
+        android:id="@+id/scrollChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/medisync_card"
+        android:clipToPadding="false"
+        android:elevation="2dp"
+        android:fillViewport="true"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/chatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp" />
+
+    </ScrollView>
+
+    <!-- MESSAGE INPUT BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/medisync_card"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- MESSAGE FIELD -->
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/medisync_input"
+            android:hint="Ask MediBot..."
+            android:imeOptions="actionSend"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="3"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="#205C56"
+            android:textColorHint="#72918C"
+            android:textSize="14sp" />
+
+        <!-- VOICE BUTTON -->
+        <Button
+            android:id="@+id/btnVoice"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#31877E"
+            android:contentDescription="Speak your question"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="&#127908;"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- SEND BUTTON -->
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#205C56"
+            android:minWidth="60dp"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- FOOTER -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="MediBot provides general information, not medical diagnosis."
+        android:textColor="#426D68"
+        android:textSize="11sp" />
+
+</LinearLayout>

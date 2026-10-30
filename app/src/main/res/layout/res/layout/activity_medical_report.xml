@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDEDE7"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- PAGE HEADING -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical Reports"
+            android:textColor="#205C56"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Organize your medical visits and reports."
+            android:textColor="#426D68"
+            android:textSize="14sp" />
+
+        <!-- HEADER BANNER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/medisync_welcome_banner"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR MEDICAL HISTORY"
+                android:textColor="#B3E1DA"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Your health journey, organized."
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Keep important details about your medical visits and reports in one place."
+                android:textColor="#E0F3EE"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+
+        </LinearLayout>
+
+        <!-- SECTION HEADING -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"
+            android:text="Report Information"
+            android:textColor="#205C56"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- REPORT FORM CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/medisync_card"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <!-- REPORT NAME -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report Name *"
+                android:textColor="#205C56"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etReportName"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/medisync_input"
+                android:hint="Enter report name"
+                android:inputType="textCapSentences"
+                android:padding="14dp"
+                android:textColor="#205C56"
+                android:textColorHint="#72918C"
+                android:textSize="15sp" />
+
+            <!-- DOCTOR NAME -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Name"
+                android:textColor="#205C56"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDoctorName"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/medisync_input"
+                android:hint="Enter doctor's name"
+                android:inputType="textCapWords"
+                android:padding="14dp"
+                android:textColor="#205C56"
+                android:textColorHint="#72918C"
+                android:textSize="15sp" />
+
+            <!-- HOSPITAL NAME -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital / Clinic"
+                android:textColor="#205C56"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etHospitalName"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/medisync_input"
+                android:hint="Enter hospital or clinic name"
+                android:inputType="textCapSentences"
+                android:padding="14dp"
+                android:textColor="#205C56"
+                android:textColorHint="#72918C"
+                android:textSize="15sp" />
+
+            <!-- REPORT DATE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report Date"
+                android:textColor="#205C56"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etReportDate"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/medisync_input"
+                android:hint="Select report date"
+                android:focusable="false"
+                android:cursorVisible="false"
+                android:clickable="true"
+                android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+                android:drawablePadding="8dp"
+                android:padding="14dp"
+                android:textColor="#205C56"
+                android:textColorHint="#72918C"
+                android:textSize="15sp" />
+
+            <!-- DESCRIPTION -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description / Findings"
+                android:textColor="#205C56"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/medisync_input"
+                android:gravity="top"
+                android:hint="Add important medical findings or notes"
+                android:inputType="textCapSentences|textMultiLine"
+                android:padding="14dp"
+                android:textColor="#205C56"
+                android:textColorHint="#72918C"
+                android:textSize="15sp" />
+
+            <!-- SAVE BUTTON -->
+            <Button
+                android:id="@+id/btnSaveReport"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:backgroundTint="#205C56"
+                android:text="Save Medical Report"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- FOOTER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="Keep your medical information accurate and up to date."
+            android:textColor="#426D68"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>
