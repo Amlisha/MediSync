@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDEDE7"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- PAGE HEADING -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:textColor="#205C56"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Manage your profile and preferences."
+            android:textColor="#426D68"
+            android:textSize="14sp" />
+
+        <!-- PROFILE BANNER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/medisync_welcome_banner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <!-- PROFILE ICON -->
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/card_reminders"
+                android:gravity="center"
+                android:text="&#128100;"
+                android:textSize="31sp"
+                android:importantForAccessibility="no" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR PROFILE"
+                    android:textColor="#B3E1DA"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+
+                <TextView
+                    android:id="@+id/tvAccountName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="My Account"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAccountUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Your username"
+                    android:textColor="#D8F3EC"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ACCOUNT OPTIONS HEADING -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"
+            android:text="Account Settings"
+            android:textColor="#205C56"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- ACCOUNT DETAILS -->
+        <TextView
+            android:id="@+id/btnAccountDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/medisync_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="82dp"
+            android:padding="18dp"
+            android:text="&#128100;  Account Details\n       View your account information   ›"
+            android:textColor="#205C56"
+            android:textSize="15sp"
+            android:lineSpacingExtra="5dp"
+            android:elevation="2dp" />
+
+        <!-- CHANGE PASSWORD -->
+        <TextView
+            android:id="@+id/btnChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/medisync_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="82dp"
+            android:padding="18dp"
+            android:text="&#128274;  Change Password\n       Update your account password   ›"
+            android:textColor="#205C56"
+            android:textSize="15sp"
+            android:lineSpacingExtra="5dp"
+            android:elevation="2dp" />
+
+        <!-- APP SETTINGS -->
+        <TextView
+            android:id="@+id/btnAppSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/medisync_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="82dp"
+            android:padding="18dp"
+            android:text="&#9881;  App Settings\n       Manage app preferences   ›"
+            android:textColor="#205C56"
+            android:textSize="15sp"
+            android:lineSpacingExtra="5dp"
+            android:elevation="2dp" />
+
+        <!-- ABOUT MEDISYNC -->
+        <TextView
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/medisync_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="82dp"
+            android:padding="18dp"
+            android:text="&#9432;  About MediSync\n       Version, help and support   ›"
+            android:textColor="#205C56"
+            android:textSize="15sp"
+            android:lineSpacingExtra="5dp"
+            android:elevation="2dp" />
+
+        <!-- LOG OUT SECTION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"
+            android:text="Session"
+            android:textColor="#205C56"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- LOG OUT BUTTON -->
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/medisync_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="78dp"
+            android:padding="18dp"
+            android:text="&#10140;  Log Out\n       Sign out of your account"
+            android:textColor="#B85C65"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="5dp"
+            android:elevation="2dp" />
+
+        <!-- FOOTER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="MediSync • Your Health Companion"
+            android:textColor="#426D68"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>
